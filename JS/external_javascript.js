@@ -21,14 +21,16 @@ var euro_dollar = euro_dollar.toFixed(3);
 do {
   var dollars = prompt("enter the amount of dollars");
 }
-while (isNaN(dollars) || dollars === '' || dollars === null || dollars === undefined);
+while (isNaN(dollars) || dollars === '' || dollars === null || dollars === undefined || dollars < 0);
 do {
   var euros = prompt("enter the amount of euros");
 }
-while (isNaN(euros) || euros === '' || euros === null || euros === undefined);
-var dollars_sum = (dollars * 27.109345).toFixed(2),
+while (isNaN(euros) || euros === '' || euros === null || euros === undefined || euros < 0);
+var dollars_sum = (dollars * 27.109345).toFixed(2);
   euros_sum = (euros * 31.831793).toFixed(2);
-alert(euros + ' euros are equal ' + euros_sum + ' grns, ' + dollars + ' dollars are equal ' + dollars_sum + ' one euro is equal ' + euro_dollar + ' dollars. ');
+  // Math.abs(dollars_sum);
+  // Math.abs(euros_sum);
+alert(euros + ' euros are equal ' + euros_sum + ' grns, ' + dollars + ' dollars are equal ' + dollars_sum + ' grns, ' + ' one euro is equal ' + euro_dollar + ' dollars. ');
 
 // dollars_curs 27.109345, euros_curs 31.831793, currensy date: 11.12.2017
 
