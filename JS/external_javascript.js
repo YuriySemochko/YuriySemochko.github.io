@@ -4,11 +4,11 @@
 var name = ' Petro ',
   time = ' at 17:00 ',
   place = 'somewhere in Milan ';
-var Event = /^[a-zA-Z]+$/;
+var events = /^[a-zA-Z]+$/;
 do {
   var user = prompt("Please enter what event Petro will have at 17:00 somewhere in Milan?");
 }
-while (!user.match(Event) || user === '' || user === null || user === undefined);
+while (!user.match(events) || user === '' || user === null || user === undefined);
 console.log(name + user + time + place);
 
 
@@ -16,7 +16,7 @@ console.log(name + user + time + place);
 
 var dollars_curs = 27.109345;
 var euros_curs = 31.831793;
-var euro_dollar = 31.831793 / 27.109345;
+var euro_dollar = euros_curs / dollars_curs;
 var euro_dollar = euro_dollar.toFixed(3);
 do {
   var dollars = prompt("enter the amount of dollars");
