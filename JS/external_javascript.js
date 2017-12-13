@@ -26,8 +26,8 @@ do {
   var euros = prompt("enter the amount of euros");
 }
 while (isNaN(euros) || euros === '' || euros === null || euros === undefined || euros < 0);
-var dollars_sum = (dollars * 27.109345).toFixed(2);
-  euros_sum = (euros * 31.831793).toFixed(2);
+var dollars_sum = (dollars * dollars_curs).toFixed(2);
+  euros_sum = (euros * euros_curs).toFixed(2);
   // Math.abs(dollars_sum);
   // Math.abs(euros_sum);
 alert(euros + ' euros are equal ' + euros_sum + ' grns, ' + dollars + ' dollars are equal ' + dollars_sum + ' grns, ' + ' one euro is equal ' + euro_dollar + ' dollars. ');
